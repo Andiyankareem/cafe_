@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>| Café Menu</title>
+    <title>Café Menu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,9 +24,17 @@
     <header class="header">
       <div class="container">
         <h1 class="logo">andy</h1>
-        <button class="contact-btn" onclick="openContactModal()">
-          تواصل معنا
-        </button>
+        <div class="header-buttons">
+          <button
+            class="theme-toggle"
+            onclick="toggleTheme()"
+            aria-label="Toggle theme">
+            <span class="theme-icon">🌙</span>
+          </button>
+          <button class="contact-btn" onclick="openContactModal()">
+            تواصل معنا
+          </button>
+        </div>
       </div>
     </header>
 
@@ -146,7 +154,6 @@
         </div>
       </div>
     </div>
-    
 
     <script src="script.js"></script>
   </body>
