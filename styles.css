@@ -112,11 +112,38 @@ body {
     align-items: center;
 }
 
+.header-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
 .logo {
     font-size: 2rem;
     font-weight: 700;
     color: var(--primary-color);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.theme-toggle {
+    background: rgba(212, 165, 116, 0.1);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: var(--primary-color);
+    color: var(--dark-bg);
+    transform: rotate(15deg);
 }
 
 .contact-btn {
@@ -395,4 +422,49 @@ html {
 ::selection {
     background: var(--primary-color);
     color: var(--dark-bg);
+}
+
+/* Light Mode */
+body.light-mode {
+    --text-color: #333;
+    --dark-bg: #f5f5f5;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --smoke-color: rgba(212, 165, 116, 0.08);
+}
+
+body.light-mode .header {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .logo {
+    text-shadow: none;
+}
+
+body.light-mode .menu-item {
+    background: var(--card-bg);
+    border-color: rgba(212, 165, 116, 0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .menu-item:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .item-description {
+    color: #666;
+}
+
+body.light-mode .modal-content {
+    background: rgba(255, 255, 255, 0.95);
+    border-color: rgba(212, 165, 116, 0.3);
+}
+
+body.light-mode .contact-info p {
+    color: #555;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+body.light-mode .contact-info p:hover {
+    background: rgba(212, 165, 116, 0.1);
 }
