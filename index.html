@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>قهوة السحاب | Café Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Smoke Container -->
+    <div class="smoke-container">
+      <div class="smoke"></div>
+      <div class="smoke"></div>
+      <div class="smoke"></div>
+      <div class="smoke"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">andy</h1>
+        <button class="contact-btn" onclick="openContactModal()">
+          تواصل معنا
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <!-- Hookah Section -->
+        <section class="menu-section" id="hookah">
+          <h2 class="section-title">أراكيل</h2>
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="item-content">
+                <h3 class="item-name">أراكيل الفواكه</h3>
+                <p class="item-description">
+                  مزيج من الفواكه الطازجة مع نكهات مختارة بعناية
+                </p>
+                <span class="item-price">1000 د.ع</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-content">
+                <h3 class="item-name">أراكيل الكلاسيك</h3>
+                <p class="item-description">
+                  النكهات التقليدية الأصيلة مع جودة عالية
+                </p>
+                <span class="item-price">1000 د.ع</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-content">
+                <h3 class="item-name">أراكيل الخاصة</h3>
+                <p class="item-description">
+                  مزيج خاص من النكهات الحصرية لدينا
+                </p>
+                <span class="item-price">1000 د.ع</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cold Drinks Section -->
+        <section class="menu-section" id="cold-drinks">
+          <h2 class="section-title">مشروبات باردة</h2>
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="item-content">
+                <h3 class="item-name">عصير البرتقال الطازج</h3>
+                <p class="item-description">عصير برتقال طبيعي طازج 100%</p>
+                <span class="item-price">1000 د.ع</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-content">
+                <h3 class="item-name">موهيتو الفراولة</h3>
+                <p class="item-description">
+                  مزيج منعش من الفراولة والنعناع والليمون
+                </p>
+                <span class="item-price">1000 د.ع</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-content">
+                <h3 class="item-name">عصير المانجو</h3>
+                <p class="item-description">
+                  عصير مانجو استوائي طازج مع قليل من الحليب
+                </p>
+                <span class="item-price">1000 د.ع</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Hot Drinks Section -->
+        <section class="menu-section" id="hot-drinks">
+          <h2 class="section-title">مشروبات ساخنة</h2>
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="item-content">
+                <h3 class="item-name">قهوة عربية</h3>
+                <p class="item-description">
+                  قهوة عربية تقليدية مع الهيل والزعفران
+                </p>
+                <span class="item-price">1000 د.ع</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-content">
+                <h3 class="item-name">شاي سحلب</h3>
+                <p class="item-description">
+                  شاي سحلب دافئ مع القرفة والمكسرات
+                </p>
+                <span class="item-price">1000 د.ع</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-content">
+                <h3 class="item-name">قهوة لاتيه</h3>
+                <p class="item-description">إسبريسو مع الحليب المبخر والرغوة</p>
+                <span class="item-price">1000 د.ع</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contactModal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeContactModal()">&times;</span>
+        <h2>تواصل معنا</h2>
+        <div class="contact-info">
+          <p>📍 العنوان:الموصل، بعشيقة</p>
+          <p>📞 الهاتف: 07510206280</p>
+          <p>✉️ البريد: andiyan.kareem@gmail.com</p>
+          <p>⏰ الساعات: 4:00 مساءً - 2:00 صباحاً</p>
+        </div>
+      </div>
+    </div>
+    W
+
+    <script src="script.js"></script>
+  </body>
+</html>
